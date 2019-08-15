@@ -1,6 +1,6 @@
 # Use Darknet YOLOv3 to train my own dataset KD
 
-1. make
+1. make (I recommend you to build a GPU version, please refer to https://blog.csdn.net/dcrmg/article/details/78565350)
 
 2. modify cfg/KD.data:  
 modify train path and valid path to your absolute path.  

@@ -1,0 +1,6 @@
+classes= 2
+train  = /home/xiaxinkai/YOLOv3/darknet/data/KD/train.txt
+valid  = /home/xiaxinkai/YOLOv3/darknet/data/KD/val.txt
+names = data/KD.names
+backup = backup
+

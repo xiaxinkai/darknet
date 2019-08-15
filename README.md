@@ -10,7 +10,9 @@ valid  = /home/xiaxinkai/YOLOv3/darknet/data/KD/val.txt
 
 3. wget https://pjreddie.com/media/files/darknet53.conv.74
 
-4. ./darknet detector train cfg/KD.data cfg/yolov3-KD.cfg darknet53.conv.74 2>&1 |tee 201908.log
+4. ./darknet detector train cfg/KD.data cfg/yolov3-KD.cfg-train darknet53.conv.74 2>&1 |tee 201908.log
+
+5. ./darknet detector test cfg/KD.data cfg/yolov3-KD.cfg-test backup/yolov3-KD*.weights data/KD/val_images/41.jpg -thresh 0.5
 
 reference site:
 https://zhuanlan.zhihu.com/p/45852709

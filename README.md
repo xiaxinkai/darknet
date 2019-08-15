@@ -1,8 +1,16 @@
-![Darknet Logo](http://pjreddie.com/media/files/darknet-black-small.png)
+# Use Darknet YOLOv3 to train my own dataset KD
 
-# Darknet #
-Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation.
+1. make
 
-For more information see the [Darknet project website](http://pjreddie.com/darknet).
+2. modify cfg/KD.data:  
+modify train path and valid path to your absolute path.  
+for example:  
+train  = /home/xiaxinkai/YOLOv3/darknet/data/KD/train.txt  
+valid  = /home/xiaxinkai/YOLOv3/darknet/data/KD/val.txt  
 
-For questions or issues please use the [Google Group](https://groups.google.com/forum/#!forum/darknet).
+3. wget https://pjreddie.com/media/files/darknet53.conv.74
+
+4. ./darknet detector train cfg/KD.data cfg/yolov3-KD.cfg darknet53.conv.74 2>&1 |tee 201908.log
+
+reference site:
+https://zhuanlan.zhihu.com/p/45852709

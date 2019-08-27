@@ -29,7 +29,8 @@
 - examples/detector.c line:431  
 `else if(0==strcmp(argv[2], "train")) train_detector(datacfg, cfg, weights, gpus, ngpus, clear);`
 
-
+- examples/detector.c line line:26 读取cfg文件，创建神经网络  
+`nets[i] = load_network(cfgfile, weightfile, clear);`
 
 
 ### [机能] 2. 测试

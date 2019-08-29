@@ -74,7 +74,7 @@
 - examples/detector.c line:26 读取cfg文件和权重文件，创建神经网络  
 `network *net = load_network(cfgfile, weightfile, 0);`
 
-- examples/detector.c line:597 将图片输入神经网络计算计算检测结果
+- examples/detector.c line:597 将图片输入神经网络计算计算检测结果  
 `network_predict(net, X);`
 
 - examples/detector.c line:604 将网络的输出结果中的物体框绘制到图片中

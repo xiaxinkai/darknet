@@ -37,7 +37,7 @@
 - examples/detector.c line:62 读取训练图像，开始训练  
 `while(get_current_batch(net) < net->max_batches){`
 
-- examples/detector.c line:123 计算损失
+- examples/detector.c line:123 计算损失  
 `loss = train_network(net, train);`
 
 - examples/detector.c line:136 每100个batch将当前权重备份到文件  
